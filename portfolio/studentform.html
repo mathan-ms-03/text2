@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reg form</title>
+    <style>
+        body{
+            background-color: rgb(161, 20, 16);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h1{
+            color: yellow;
+            font-size: 35px;
+            text-align: center;
+            text-decoration: underline;
+            cursor: pointer;
+            transition: 1s;
+        }
+
+        h1:hover{
+            color: black;
+        }
+        form{
+            position: absolute;
+            line-height: 35px;
+            left: 40%;
+        }
+
+        input{
+            border-radius: 5px;
+            border: none;
+        }
+
+        label{
+            font-size: 20px;
+            font-weight: 800;
+        }
+
+        .btn{
+            padding: 10px 15px 10px 15px;
+            background-color: yellow;
+            font-weight: 800;
+            cursor: pointer;
+            transition: 1s;
+            border: none;
+        }
+
+        .btn:hover{
+            background-color: white;
+            border: solid 2px yellow;
+        }
+        .button{
+            position: absolute;
+            left: 45%;
+            top: 90;
+            padding: 10px;
+            background-color: yellow;
+            font-weight: 800;
+            cursor: pointer;
+            transition: 1s;
+            border: none;
+            border-radius: 10px;
+
+        }
+    </style>
+</head>
+<body style="background-color:rgb(161, 20, 16);">
+    <div class="contect_form">
+    <h1>contect form</h1>
+    <form action="/result" method="POST">
+        <table>
+            <tr>
+                <td><label for="name">name:</label> </td>
+                <td><input type="text" id="name" name="name" placehilder="Entername:"> </td>
+            </tr>
+            <tr>
+                <td><label for="age">age:</label> </td>
+                <td><input type="number" id="age" name="age" placehilder="Enterage:"> </td>
+            </tr>
+            <tr>
+                <td><label for="department">department:</label> </td>
+                <td><input type="text" id="department" name="dep" placehilder="Enterdepartment:"></td>
+            </tr>
+            <tr>
+                <td><label for="gmail_id">gmail_id:</label> </td>
+                <td><input type="text" id="gmail_id" name="gmail_id" placehilder="Entergemil_id:"> </td>
+            </tr>
+            <tr>
+                <td><label for="date_of_birth">date_of_birth:</label> </td>
+                <td><input type="date" id="date_of_birth" name="DOB" placehilder="EnterDOB:"> </td>
+            </tr>
+            <tr>
+                <td><label for="cantect_number">contect_number:</label> </td>
+                <td><input type="number" id="contect_number" name="contect_number" placehilder="Enter content_number:"> </td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="submit" class="btn"></td>
+                <td><input type="reset" value="reset" class="btn"></td>
+
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+    </form>
+        <a href="index.html" ><button>back to home</button></a>
+    </div>
+</body>
+</html>
